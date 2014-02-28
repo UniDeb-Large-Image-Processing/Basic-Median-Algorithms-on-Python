@@ -4,10 +4,9 @@ import datetime
 
 
 def calculate_median(data_array):
-    ans = np.median(data_array[~np.isnan(data_array)])
-    return int(ans)
+    return int(np.median(data_array[~np.isnan(data_array)]))
 
-window_half_height = 10
+window_half_height = 2
 window_height = 2 * window_half_height + 1
 window_area = window_height * window_height
 
